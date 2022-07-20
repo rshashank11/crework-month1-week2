@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: #fff;
+            background-color: #24272b;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #container-main {
+            margin: auto;
+            width: 800px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            border-radius: 10px;
+            background-color: #000;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        .inner-container {
+            padding-left: 15px;
+        }
+
+        button {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            padding: 5px 0;
+            background-color: #0466c8;
+            color: #fff;
+            width: 90%;
+            border-radius: 7px;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn-google {
+            background-color: #24272b;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        input {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            caret-color: #fff;
+            background-color: #24272b;
+            border: none;
+            border-radius: 5px;
+            width: 80%;
+            padding: 5px 10px;
+            margin: 10px 0;
+        }
+
+        input::placeholder {
+            color: #fff;
+        }
+
+        .input-checkbox {
+            box-shadow: none;
+            width: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: auto;
+        }
+
+        span {
+            color: #0466c8;
+        }
+
+        h5 {
+            margin-top: 10px;
+        }
+
+        hr {
+            margin: 15px 0;
+            width: 90%;
+            border: 0.5px solid #24272b;
+        }
+    </style>
+    <title>Login / SignUp Module</title>
+</head>
+
+<body>
+    <div id="container-main">
+        <div class="container">
+            <div class="inner-container">
+            <h4>Sign Up</h4>
+            <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Sign Up with
+                Google</button>
+            <hr>
+
+            <label for="input-name">Name</label>
+            <br>
+            <input type="text" id="input-name" placeholder="Enter your name">
+            <br>
+
+            <label for="input-email-1">Email</label>
+            <br>
+            <input type="email" name="" id="input-email-1" placeholder="example@mail.com">
+            <br>
+
+            <label for="input-password-1">Password</label>
+            <br>
+            <input type="password" name="" id="input-password-1" placeholder="at least 8 characters">
+            <br>
+            <hr>
+
+            <input type="checkbox" value="agree" class="input-checkbox"> I agree with <span>Terms</span> and
+            <span>Privacy</span>
+            <br>
+            <button class="btn">Sign Up</button>
+            <hr>
+        </div>
+            <div class="footer">
+                <p>Already have an account?</p>
+                <h5><span>Log in</span></h5>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="inner-container">
+            <h4>Log in</h4>
+            <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Log in with
+                Google</button>
+            <hr>
+
+            <label for="input-email-2">Email</label>
+            <br>
+            <input type="email" id="input-email-2" placeholder="example@mail.com">
+            <br>
+
+            <label for="input-password-2">Password</label>
+            <br>
+            <input type="password" name="" id="input-password-2" placeholder="at least 8 characters">
+            <br>
+
+            <hr>
+            <input type="checkbox" value="agree" class="input-checkbox"> Remember me
+            <br>
+            <button class="btn">Log In</button>
+        </div>
+            <div class="footer">
+                <h5><span>Forgot Password?</span></h5>
+                <hr style="margin-left: 15px;">
+                <p>Don't have an account?</p>
+                <h5><span>Sign Up</span></h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
