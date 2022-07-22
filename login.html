@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    :root {
+        --primary: #24272b;
+        --secondary: #0466c8;
+        --tertiary: #fff;
+        --quaternary: #000;
+    }
+
+    body {
+        color: var(--tertiary);
+        background-color: var(--primary);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #container-main {
+        margin: auto;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        border-radius: 10px;
+        background-color: var(--quaternary);
+        width: 290px;
+        margin-right: 10px;
+    }
+
+    .inner-container {
+        padding-left: 15px;
+    }
+
+    button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding: 5px 0;
+        background-color: var(--secondary);
+        color: var(--tertiary);
+        width: 250px;
+        border-radius: 7px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .btn-google {
+        background-color: var(--primary);
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    input {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--tertiary);
+        caret-color: var(--tertiary);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 5px;
+        width: 230px;
+        padding: 5px 10px;
+        margin: 10px 0;
+    }
+
+    input::placeholder {
+        color: var(--tertiary);
+        opacity: 70%;
+    }
+
+    .input-checkbox {
+        box-shadow: none;
+        width: 13px;
+    }
+
+    .footer {
+        text-align: center;
+        margin: auto;
+    }
+
+    span {
+        cursor: pointer;
+        color: var(--secondary);
+    }
+
+    h5 {
+        margin-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    hr {
+        margin: 15px 0;
+        width: 90%;
+        border: 0.5px solid var(--primary);
+    }
+</style>
+</head>
+<body>
+    <div id="container-main">
+    <div class="container">
+        <div class="inner-container">
+        <h4>Log in</h4>
+        <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Log in with
+            Google</button>
+        <hr>
+        <form method="post">
+        <label for="input-email-2">Email</label>
+        <br>
+        <input type="email" id="input-email-2" placeholder="example@mail.com">
+        <br>
+
+        <label for="input-password-2">Password</label>
+        <br>
+        <input type="password" name="" id="input-password-2" placeholder="at least 8 characters">
+        <br>
+
+        <hr>
+        <input type="checkbox" value="agree" class="input-checkbox"> Remember me
+        <br>
+        <button class="btn">Log In</button>
+    </form>
+    </div>
+        <div class="footer">
+            <h5><span>Forgot Password?</span></h5>
+            <hr style="margin-left: 15px;">
+            <p>Don't have an account?</p>
+            <h5><a href="index.html"><span>Sign Up</span></a></h5>
+        </div>
+    </div>
+</div>
+</body>
+</html>

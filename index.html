@@ -34,7 +34,7 @@
         .container {
             border-radius: 10px;
             background-color: var(--quaternary);
-            width: 280px;
+            width: 290px;
             margin-right: 10px;
         }
 
@@ -78,6 +78,7 @@
 
         input::placeholder {
             color: var(--tertiary);
+            opacity: 70%;
         }
 
         .input-checkbox {
@@ -91,11 +92,15 @@
         }
 
         span {
+            cursor: pointer;
             color: var(--secondary);
         }
 
         h5 {
             margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
         }
 
         hr {
@@ -104,7 +109,7 @@
             border: 0.5px solid var(--primary);
         }
     </style>
-    <title>Login / SignUp Module</title>
+    <title>SignUp Page</title>
 </head>
 
 <body>
@@ -115,7 +120,7 @@
             <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Sign Up with
                 Google</button>
             <hr>
-
+            <form method="post">
             <label for="input-name">Name</label>
             <br>
             <input type="text" id="input-name" placeholder="Enter your name">
@@ -137,42 +142,13 @@
             <br>
             <button class="btn">Sign Up</button>
             <hr>
+        </form>
         </div>
             <div class="footer">
                 <p>Already have an account?</p>
-                <h5><span>Log in</span></h5>
+                <h5><a href="login.html"><span>Log in</span></a></h5>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="inner-container">
-            <h4>Log in</h4>
-            <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Log in with
-                Google</button>
-            <hr>
-
-            <label for="input-email-2">Email</label>
-            <br>
-            <input type="email" id="input-email-2" placeholder="example@mail.com">
-            <br>
-
-            <label for="input-password-2">Password</label>
-            <br>
-            <input type="password" name="" id="input-password-2" placeholder="at least 8 characters">
-            <br>
-
-            <hr>
-            <input type="checkbox" value="agree" class="input-checkbox"> Remember me
-            <br>
-            <button class="btn">Log In</button>
-        </div>
-            <div class="footer">
-                <h5><span>Forgot Password?</span></h5>
-                <hr style="margin-left: 15px;">
-                <p>Don't have an account?</p>
-                <h5><span>Sign Up</span></h5>
-            </div>
-        </div>
+        </div>  
     </div>
 </body>
 
