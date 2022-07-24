@@ -7,7 +7,7 @@
 <hr />
 <p>Screenshots of my work</p>
 <img height="500px" src="https://user-images.githubusercontent.com/90172730/180366267-56edd36f-cacb-4e14-898a-f370cf20ad83.png" />
-<img height="500px" src="https://user-images.githubusercontent.com/90172730/180366471-d01d035d-99ed-47a3-8e83-92e141ab25c0.png" />
+<img height="500px" src="https://user-images.githubusercontent.com/90172730/180646365-190bace0-aaa4-4a3a-aae0-7d58e44300ed.png" />
 </div>
 
 
