@@ -1,0 +1,116 @@
+:root {
+    --primary: #24272b;
+    --secondary: #0466c8;
+    --tertiary: #fff;
+    --quaternary: #000;
+}
+
+body {
+    color: var(--tertiary);
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container-main {
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: var(--quaternary);
+    width: 290px;
+    margin-right: 10px;
+}
+
+.inner-container {
+    text-align: center;
+    padding-left: 15px;
+}
+
+button {
+    letter-spacing: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 5px 0;
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    width: 170px;
+    border-radius: 7px;
+    transition: all 1s ease-out;
+}
+
+button:hover {
+    letter-spacing: 1px;
+    width: 230px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.btn-google {
+    background-color: var(--primary);
+}
+
+label {
+    display:block;
+    font-weight: 600;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--tertiary);
+    caret-color: var(--tertiary);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    transition: width 1s ease-out;
+}
+
+input:focus {
+    width: 230px;
+}
+
+input::placeholder {
+    color: var(--tertiary);
+    opacity: 70%;
+}
+
+.input-checkbox:focus {
+    width: 13px;
+}
+.input-checkbox {
+    transition: none;
+    box-shadow: none;
+    width: 13px;
+}
+
+.footer {
+    text-align: center;
+    margin: auto;
+}
+
+span {
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+h5 {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin: 15px 0;
+    width: 90%;
+    border: 0.5px solid var(--primary);
+}

@@ -10,105 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --primary: #24272b;
-            --secondary: #0466c8;
-            --tertiary: #fff;
-            --quaternary: #000;
-        }
-
-        body {
-            color: var(--tertiary);
-            background-color: var(--primary);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        #container-main {
-            margin: auto;
-            width: 800px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            border-radius: 10px;
-            background-color: var(--quaternary);
-            width: 290px;
-            margin-right: 10px;
-        }
-
-        .inner-container {
-            padding-left: 15px;
-        }
-
-        button {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            padding: 5px 0;
-            background-color: var(--secondary);
-            color: var(--tertiary);
-            width: 250px;
-            border-radius: 7px;
-        }
-
-        .btn {
-            margin-top: 10px;
-        }
-
-        .btn-google {
-            background-color: var(--primary);
-        }
-
-        label {
-            font-weight: 600;
-        }
-
-        input {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--tertiary);
-            caret-color: var(--tertiary);
-            background-color: var(--primary);
-            border: none;
-            border-radius: 5px;
-            width: 230px;
-            padding: 5px 10px;
-            margin: 10px 0;
-        }
-
-        input::placeholder {
-            color: var(--tertiary);
-            opacity: 70%;
-        }
-
-        .input-checkbox {
-            box-shadow: none;
-            width: 13px;
-        }
-
-        .footer {
-            text-align: center;
-            margin: auto;
-        }
-
-        span {
-            cursor: pointer;
-            color: var(--secondary);
-        }
-
-        h5 {
-            margin-top: 10px;
-        }
-        a {
-            text-decoration: none;
-        }
-
-        hr {
-            margin: 15px 0;
-            width: 90%;
-            border: 0.5px solid var(--primary);
-        }
-    </style>
+    <link href="/styles.css" rel="stylesheet" type="text/css">
     <title>SignUp Page</title>
 </head>
 
@@ -116,39 +18,32 @@
     <div id="container-main">
         <div class="container">
             <div class="inner-container">
-            <h4>Sign Up</h4>
-            <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Sign Up with
-                Google</button>
-            <hr>
-            <form method="post">
-            <label for="input-name">Name</label>
-            <br>
-            <input type="text" id="input-name" placeholder="Enter your name">
-            <br>
+                <h4>Sign Up</h4>
+                <button class="btn-google"><img style="height: 10px;" src="/icons/icon-google.svg" /> Sign Up with
+                    Google</button>
+                <hr>
+                <form>
+                    <label for="input-name">Name</label>
+                    <input type="text" id="input-name" placeholder="Enter your name">
 
-            <label for="input-email-1">Email</label>
-            <br>
-            <input type="email" name="" id="input-email-1" placeholder="example@mail.com">
-            <br>
+                    <label for="input-email-1">Email</label>
+                    <input type="email" name="" id="input-email-1" placeholder="example@mail.com">
 
-            <label for="input-password-1">Password</label>
-            <br>
-            <input type="password" name="" id="input-password-1" placeholder="at least 8 characters">
-            <br>
-            <hr>
+                    <label for="input-password-1">Password</label>
+                    <input type="password" name="" id="input-password-1" placeholder="at least 8 characters">
+                    <hr>
 
-            <input type="checkbox" value="agree" class="input-checkbox"> I agree with <span>Terms</span> and
-            <span>Privacy</span>
-            <br>
-            <button class="btn">Sign Up</button>
-            <hr>
-        </form>
-        </div>
+                    <input type="checkbox" value="agree" class="input-checkbox"> I agree with <span>Terms</span> and
+                    <span>Privacy</span>
+                    <button type="button" class="btn">Sign Up</button>
+                    <hr>
+                </form>
+            </div>
             <div class="footer">
                 <p>Already have an account?</p>
                 <h5><a href="login.html"><span>Log in</span></a></h5>
             </div>
-        </div>  
+        </div>
     </div>
 </body>
 
