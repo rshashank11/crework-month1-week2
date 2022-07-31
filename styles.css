@@ -104,7 +104,7 @@ input::placeholder {
     opacity: 70%;
 }
 
-.input-checkbox:focus {
+.input-checkbox:checked {
     transform: rotate(360deg);
 }
 
