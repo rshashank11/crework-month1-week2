@@ -20,17 +20,16 @@ body {
 
 .container {
     border-radius: 10px;
-    background-color: var(--quaternary);
-    width: 290px;
-    margin-right: 10px;
+    background:#000;
+    width: 300px;
+    padding-left: 20px;
 }
 
-.inner-container {
-    text-align: center;
-    padding-left: 15px;
-}
 
 button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     letter-spacing: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -43,7 +42,6 @@ button {
 }
 
 button:hover {
-    letter-spacing: 1px;
     width: 230px;
 }
 
@@ -52,11 +50,30 @@ button:hover {
 }
 
 .btn-google {
-    background-color: var(--primary);
+    color: var(--tertiary);
+    animation: google-button 4s ease-out 0s infinite alternate;
+}
+
+@keyframes google-button {
+    0% {
+        background: #DB4437;
+        opacity: 70%;
+    }
+    34% {
+        background: #F4B400;
+        opacity: 70%;
+    }
+    68% {
+        background: #0F9D58;
+        opacity: 70%;
+    }
+    100% {
+        background: #4285F4;
+        opacity: 70%;
+    }
 }
 
 label {
-    display:block;
     font-weight: 600;
 }
 
@@ -70,11 +87,16 @@ input {
     width: 150px;
     padding: 5px 10px;
     margin: 10px 0;
+}
+
+.input {
+    display:block;
     transition: width 1s ease-out;
 }
 
-input:focus {
+.input:focus {
     width: 230px;
+    color: white;
 }
 
 input::placeholder {
@@ -83,11 +105,11 @@ input::placeholder {
 }
 
 .input-checkbox:focus {
-    width: 13px;
+    transform: rotate(360deg);
 }
+
 .input-checkbox {
-    transition: none;
-    box-shadow: none;
+    transition: transform 1s ease;
     width: 13px;
 }
 
@@ -105,12 +127,16 @@ h5 {
     margin-top: 10px;
 }
 
+h1 {
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
 }
 
 hr {
     margin: 15px 0;
-    width: 90%;
+    width: 95%;
     border: 0.5px solid var(--primary);
 }
