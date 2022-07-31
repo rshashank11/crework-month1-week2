@@ -1,13 +1,12 @@
-<h1>crework-month1-week1</h1>
+<h1>crework-month1-week2</h1>
 
 <h2>Task:</h2>
-<h3>Create a Login/SignUp Module without using CSS.</h3>
+<h3>Create a Login/SignUp Module using CSS.</h3>
 <div>
-<a href="https://shashank-crework-month1-week1.netlify.app/">Live Task Link</a>
 <hr />
 <p>Screenshots of my work</p>
-<img height="500px" src="https://user-images.githubusercontent.com/90172730/180366267-56edd36f-cacb-4e14-898a-f370cf20ad83.png" />
-<img height="500px" src="https://user-images.githubusercontent.com/90172730/180646365-190bace0-aaa4-4a3a-aae0-7d58e44300ed.png" />
+<img height="500px" src="https://user-images.githubusercontent.com/90172730/182023006-1e6d45d8-7dcc-4d5f-b28a-c72ee0daf951.png" />
+<img height="500px" src="https://user-images.githubusercontent.com/90172730/182023033-a601f7ef-dd22-4127-bcf4-1f40a0c44416.png" />
 </div>
 
 
